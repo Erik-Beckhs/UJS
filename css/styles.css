@@ -1129,3 +1129,30 @@ a img{
     height: 100%;
     object-fit: cover;
 }
+
+.portada1{
+    background-image: url('../img/portada1.jpeg');
+    background-size: cover; /* Cubre todo el contenedor */
+    background-repeat: no-repeat;
+    background-position: center; /* Opcional: ajusta la posición de la imagen */
+
+    /* Ajusta el color de fondo para casos de carga lenta de la imagen */
+    background-color: #ccc;
+}
+
+.portada2{
+    background-image: url('../img/portada2.jpg');
+    background-size: cover; /* Cubre todo el contenedor */
+    background-repeat: no-repeat;
+    background-position: center; /* Opcional: ajusta la posición de la imagen */
+
+    /* Ajusta el color de fondo para casos de carga lenta de la imagen */
+    background-color: #ccc;
+}
+
+@media (max-width: 768px) {
+    /* Estilos específicos para pantallas más pequeñas */
+    .portada1, .portada2 {
+        background-size: contain; /* Otra opción para ajustar el tamaño en pantallas pequeñas */
+    }
+}
